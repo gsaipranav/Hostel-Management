@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookActivity">
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER THE USER NAME"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER THE GENDER"
+        android:layout_below="@+id/username"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:id="@+id/room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="AC OR NON AC"
+        android:layout_below="@+id/gender"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:id="@+id/mess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="VEG OR NON VEG"
+        android:layout_below="@+id/room"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER YOUR MOBILE NO"
+        android:layout_below="@+id/mess"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="8dp"
+        />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textSize="25dp"
+        android:layout_below="@+id/mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:onClick="adding"
+        />
+
+
+</RelativeLayout>

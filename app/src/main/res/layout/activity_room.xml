@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".RoomActivity">
+    <TextView
+        android:id="@+id/infra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infrastructure"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:layout_margin="16dp"
+        />
+    <ImageView
+        android:id="@+id/interior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/interior"
+        android:layout_below="@+id/infra"/>
+
+        />
+    <ImageView
+        android:id="@+id/beds"
+        android:src="@drawable/beds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interior"
+    android:layout_margin="8dp"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NEXT"
+    android:layout_below="@+id/beds"
+    android:layout_centerHorizontal="true"
+    android:onClick="book"/>
+</RelativeLayout>
